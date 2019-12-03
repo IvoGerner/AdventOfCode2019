@@ -74,17 +74,25 @@ L = [1,12,2,3,
      99,2,14,0,
      0]
 
-i = 0
+def findOutput(listInput):
+    N = listInput
+    i = 0
+    while i < len(N):
+        if N[i] == 1:
+            N[N[i+3]] = N[N[i+1]] + N[N[i+2]]
+        elif N[i] == 2:
+            N[N[i+3]] = N[N[i+1]] * N[N[i+2]]
+        elif N[i] == 99:
+            break
+        i += 4
+    return N
 
-while i < len(L):
-    # print(L[i+3])
-    if L[i] == 1:
-        L[L[i+3]] = L[L[i+1]] + L[L[i+2]]
-    elif L[i] == 2:
-        L[L[i+3]] = L[L[i+1]] * L[L[i+2]]
-    elif L[i] == 99:
-        break
-    i += 4
 
-
-print(L)
+for x in range(100):
+    for y in range(100):
+        M = L.copy()
+        M[1] = x
+        M[2] = y
+        if findOutput(M)[0] == 19690720:
+            print("x: ",x,", y: ",y)
+            break
