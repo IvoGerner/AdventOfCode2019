@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45da0a8d-243c-4340-b57d-e2ec32388c2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Day03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input/inputD1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input/inputD2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input/inputD3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day02.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day03.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day03.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +140,10 @@
       <option name="presentableId" value="Default" />
       <updated>1575233830645</updated>
       <workItem from="1575233831759" duration="2399000" />
-      <workItem from="1575371396497" duration="10442000" />
+      <workItem from="1575371396497" duration="10499000" />
+      <workItem from="1575552757187" duration="207000" />
+      <workItem from="1575553058822" duration="822000" />
+      <workItem from="1575978408876" duration="7456000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore">
       <created>1575372517608</created>
@@ -160,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575377998619</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finished Day 2&#10;Start Day 3 part 1, need intersections">
+      <created>1575414302669</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575414302669</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +187,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -191,7 +199,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="gitignore" />
     <MESSAGE value="Day 2 part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 2 part 1" />
+    <MESSAGE value="Finished Day 2&#10;Start Day 3 part 1, need intersections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Day 2&#10;Start Day 3 part 1, need intersections" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -205,7 +214,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AdventOfCode2019$Day03.coverage" NAME="Day03 Coverage Results" MODIFIED="1575414158304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AdventOfCode2019$Day03.coverage" NAME="Day03 Coverage Results" MODIFIED="1575988958331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AdventOfCode2019$Day01.coverage" NAME="Day01 Coverage Results" MODIFIED="1575372471637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AdventOfCode2019$Day02.coverage" NAME="Day02 Coverage Results" MODIFIED="1575409578432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

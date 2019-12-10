@@ -3,28 +3,45 @@ f = open("input/inputD3.txt", 'r')
 L = f.readline().split(",")
 M = f.readline().split(",")
 
+
 # dictionary, store all positions. Go by min and max where intersections are.
 # tupels
 #
 
 def pather(inputList):
-    distance = [0, 0] #(x, y)
+    currentPos = (0, 0)
+    distanceDict = {0: 0}
     for i in range(len(inputList)):
+        step = int(''.join(x for x in inputList[i] if x.isdigit()))
         if 'R' in inputList[i]:
-            distance[0] += int(''.join(x for x in inputList[i] if x.isdigit()))
+            for x in range(step):
+                distanceDict[currentPos[0] + x] = currentPos[1]
+            currentPos = (currentPos[0] + step, currentPos[1])
+            # print(inputList[i], currentPos)
         elif 'L' in inputList[i]:
-            distance[0] -= int(''.join(x for x in inputList[i] if x.isdigit()))
+            for x in range(step):
+                distanceDict[currentPos[0] - x] = currentPos[1]
+            currentPos = (currentPos[0] - step, currentPos[1])
+            # print(inputList[i], currentPos)
         elif 'U' in inputList[i]:
-            distance[1] += int(''.join(x for x in inputList[i] if x.isdigit()))
+            for y in range(step):
+                distanceDict[currentPos[0]] = currentPos[1] + y
+            currentPos = (currentPos[0], currentPos[1] + step)
+            # print(inputList[i], currentPos)
         elif 'D' in inputList[i]:
-            distance[1] -= int(''.join(x for x in inputList[i] if x.isdigit()))
+            for y in range(step):
+                distanceDict[currentPos[0]] = currentPos[1] - y
+            currentPos = (currentPos[0], currentPos[1] - step)
+            # print(inputList[i], currentPos)
 
-    return distance
-
-print(pather(L))
-
-print(pather(M))
-
+    return distanceDict
 
 
+dictL = (pather(L))
+print(dictL)
 
+dictM = (pather(M))
+print(dictM)
+
+# d_inter = dict(set(dictL.items()).intersection(dictM.items()).intersection())
+# print(d_inter)
